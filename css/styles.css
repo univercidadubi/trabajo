@@ -44,7 +44,27 @@ html {
     background-image: url("../assets/img/fondo.jpg");
     background-size: 100% 100%;
     background-attachment: fixed;
+    animation: mymove 15s infinite;
 }
+
+@keyframes mymove {
+    25% {
+        background-image: url("../assets/img/fondo.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    75% {
+        background-image: url("../assets/img/fondo1.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    100% {
+        background-image: url("../assets/img/fondo2.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+}
+
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
@@ -10591,6 +10611,13 @@ p.lead {
     font-weight: 500;
     font-size: 1.5rem;
 }
+
+nav {
+    -moz-box-shadow: inset 8px 2px 75px #000000;
+    -webkit-box-shadow: inset 8px 2px 75px #000000;
+    box-shadow: inset 8px 2px 75px #000000;
+}
+
 
 #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 800;
